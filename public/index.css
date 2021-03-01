@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
+
+* {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: wheat;
+  z-index: 0;
+}
+
+#by {
+  z-index: 1;
+  color: black;
+  position: relative;
+}
+
+audio {
+  position: fixed;
+  top: 95%;
+  left: 2%;
+  transform: translateY(-100%);
+}
+
+span {
+  color: red;
+}
+
+#text-display {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 73vh;
+  position: relative;
+  left: 10vw;
+  z-index: 1;
+  background: transparent;
+  scroll-behavior: smooth;
+
+  overflow-y: hidden;
+  pointer-events: none;
+}
+
+.m1 {
+  max-width: 30vw;
+  float: left;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.m2 {
+  max-width: 30vw;
+  float: right;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.mg {
+  border-radius: 15px;
+  border: white solid 2px;
+  box-shadow: gray 2px;
+  padding: 5px 10px 5px 10px;
+
+  background-color: whitesmoke;
+}
+
+#ms-box {
+  position: fixed;
+  top: 95vh;
+  left: 50vw;
+  display: flex;
+
+  transform: translateX(-50%) translateY(-100%);
+  z-index: 10;
+}
+
+#t-box {
+  resize: unset;
+  font-size: medium;
+  outline-style: none;
+  border-radius: 25px;
+  padding: 7px 15px 7px 15px;
+}
+
+button {
+  width: 60px;
+  border-radius: 25px;
+  outline: none;
+  border: whitesmoke 1px;
+
+  margin-left: 5px;
+}
+
+button:active {
+  outline: none;
+  background-color: gray;
+}

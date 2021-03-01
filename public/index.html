@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Webby Mood</title>
+    <script
+      <script
+      src="https://cdn.socket.io/3.1.1/socket.io.min.js"
+      integrity="sha384-gDaozqUvc4HTgo8iZjwth73C6dDDeOJsAgpxBcMpZYztUfjHXpzrpdrHRdVp8ySO"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <p id='by'>Created with <span>&hearts; </span>by Tara, Arya and Alfred</p>
+    <audio controls loop>
+      <source src="h.mp3" type="audio/mpeg">
+    </audio>
+    <div id="text-display"></div>
+    <form onsubmit="message(event)" id='ms-box'>
+      <textarea type="text" id="t-box" cols="50" rows="3" onkeypress="checkEnter(event)"/></textarea>
+      <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></button>
+    </form>
+  </body>
+  <script src="/index.js"></script>
+  <script src= 
+        "/particles.js"> 
+    </script> 
+    <script src= 
+        "/app.js"> 
+    </script> 
+</html>
