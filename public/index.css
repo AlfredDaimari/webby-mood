@@ -14,8 +14,9 @@ body {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: wheat;
   z-index: 0;
+
+  transition: linear 0.5s;
 }
 
 #by {

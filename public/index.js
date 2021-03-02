@@ -5,13 +5,22 @@ const text_display = document.getElementById("text-display");
 const audio = document.querySelector("audio");
 const audioDic = {
   "-2": "/hind.mp3",
-  "-1": "/siren.mp3",
-  0: "/h.mp3",
+  "-1": "/th_siren.mp3",
+  0: "/ocean.mp3",
   1: "/h.mp3",
   2: "/h.mp3",
 };
+const colourDic = {
+  "-2": "wheat",
+  "-1": "wheat",
+  0: "rgba(0, 185, 255, 0.3)",
+  1: "wheat",
+  2: "wheat",
+};
 
-var mood = 0;
+var mood = -5;
+const particlesJs = document.getElementById("particles-js");
+particlesJs.style.backgroundColor = colourDic[mood];
 
 socket.on("message", (data) => {
   const dv = document.createElement("div");
@@ -27,7 +36,7 @@ socket.on("message", (data) => {
 socket.on("mood", (data) => {
   if (mood != data) {
     mood = data;
-    console.log(mood);
+    particlesJs.style.background = colourDic[mood];
     audio.src = audioDic[mood];
     audio.play();
   }

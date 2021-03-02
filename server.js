@@ -25,9 +25,9 @@ function review_sentiment(review) {
 }
 
 function getSenBracket() {
-  if (senti_score > 0 && senti_score < 3) {
+  if (senti_score > 1 && senti_score < 3) {
     return 1;
-  } else if (senti_score < 0 && senti_score > -3) {
+  } else if (senti_score < -1 && senti_score > -3) {
     return -1;
   } else if (senti_score <= -3) {
     return -2;
