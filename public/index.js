@@ -11,13 +11,14 @@ const audioDic = {
   2: "/h.mp3",
 };
 const colourDic = {
-  "-2": "wheat",
-  "-1": "wheat",
+  "-2": "rgba(0,0,0, 0.9)",
+  "-1": "rgba(255, 0, 0, 0.6)",
   0: "rgba(0, 185, 255, 0.3)",
   1: "wheat",
   2: "wheat",
 };
 
+particlesJS("particles-js", objs[0]);
 var mood = -5;
 const particlesJs = document.getElementById("particles-js");
 particlesJs.style.backgroundColor = colourDic[mood];
@@ -39,6 +40,7 @@ socket.on("mood", (data) => {
     particlesJs.style.background = colourDic[mood];
     audio.src = audioDic[mood];
     audio.play();
+    particlesJS("particles-js", objs[mood]);
   }
 });
 
