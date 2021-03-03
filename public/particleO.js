@@ -473,13 +473,13 @@ const objs = {
         },
       },
       color: {
-        value: "#ffffff",
+        value: "#595959",
       },
       shape: {
         type: "circle",
         stroke: {
           width: 0,
-          color: "#000000",
+          color: "##595959",
         },
         polygon: {
           nb_sides: 5,
@@ -513,7 +513,7 @@ const objs = {
       line_linked: {
         enable: true,
         distance: 150,
-        color: "#ffffff",
+        color: "#595959",
         opacity: 0.4,
         width: 1,
       },

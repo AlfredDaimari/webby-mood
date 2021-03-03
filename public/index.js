@@ -7,15 +7,15 @@ const audioDic = {
   "-2": "/hind.mp3",
   "-1": "/th_siren.mp3",
   0: "/ocean.mp3",
-  1: "/h.mp3",
-  2: "/h.mp3",
+  1: "/happy1.mp3",
+  2: "/happy2.mp3",
 };
 const colourDic = {
   "-2": "rgba(0,0,0, 0.9)",
   "-1": "rgba(255, 0, 0, 0.6)",
   0: "rgba(0, 185, 255, 0.3)",
-  1: "wheat",
-  2: "wheat",
+  1: "rgba(102,254,102, 0.6)",
+  2: "rgba(255,255,56, 0.5)",
 };
 
 particlesJS("particles-js", objs[0]);
